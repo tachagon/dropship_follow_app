@@ -18,3 +18,12 @@
 @import "bootstrap";
 
 @import "font-awesome";
+
+img.thumb{
+  width: 100px;
+  height: auto;
+}
+
+.table tbody>tr>td.vert-align{
+    vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+<tr>
+  <!-- product follow -->
+  <td class="vert-align">
+    <a href="#" class="product_follow">
+      <% if product.follow %>
+        <i class="fa fa-toggle-on fa-2x" style="color: green;"></i>
+      <% else %>
+        <i class="fa fa-toggle-off fa-2x" style="color: green;"></i>
+      <% end %>
+    </a>
+  </td>
+
+  <!-- product image -->
+  <td>
+    <img src="<%= product.image %>" alt="<%= product.name %>" class="img-responsive thumb">
+  </td>
+
+  <!-- product code -->
+  <td class="vert-align">
+    <%= product.code %>
+  </td>
+
+  <!-- product name -->
+  <td class="vert-align">
+    <%= product.name %>
+  </td>
+
+  <!-- product status -->
+  <td class="vert-align">
+    <%= product.show_status.html_safe %>
+  </td>
+</tr>
