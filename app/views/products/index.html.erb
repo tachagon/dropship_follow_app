@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="page-header">
+	  <h1>All Products</h1>
+	</div>
+</div>
+
+<!-- add new product form -->
+<div class="row">
+	<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+		<%= form_for(@product, html: {class: ''}) do |f| %>
+			<%= render partial: 'url_form', locals: {f: f} %>
+		<% end %>
+	</div>
+</div>

@@ -1,3 +1,9 @@
+class String
+	def |(what)
+	  self.strip.blank? ? what : self
+	end
+end
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
